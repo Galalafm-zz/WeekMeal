@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2F067A8376EB743E44C8CA /* Pods_WeekMealDebugUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69595E465CB0866E874516D1 /* Pods_WeekMealDebugUITests.framework */; };
 		3C595B2C1FE810CD003011A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B2B1FE810CC003011A5 /* AppDelegate.swift */; };
 		3C595B2E1FE810CD003011A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B2D1FE810CD003011A5 /* ViewController.swift */; };
 		3C595B311FE810CD003011A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C595B2F1FE810CD003011A5 /* Main.storyboard */; };
@@ -14,6 +15,13 @@
 		3C595B361FE810CD003011A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C595B341FE810CD003011A5 /* LaunchScreen.storyboard */; };
 		3C595B411FE810CD003011A5 /* WeekMealDebugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B401FE810CD003011A5 /* WeekMealDebugTests.swift */; };
 		3C595B4C1FE810CD003011A5 /* WeekMealDebugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B4B1FE810CD003011A5 /* WeekMealDebugUITests.swift */; };
+		433AAE281FE8483C0056F1B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433AAE271FE8483C0056F1B4 /* LoginViewController.swift */; };
+		433AAE2B1FE848610056F1B4 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433AAE291FE848610056F1B4 /* ResetPasswordViewController.swift */; };
+		433AAE2C1FE848610056F1B4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433AAE2A1FE848610056F1B4 /* SignUpViewController.swift */; };
+		433AAE341FE90C470056F1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */; };
+		433AAE361FE915250056F1B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433AAE351FE915250056F1B4 /* HomeViewController.swift */; };
+		AD9679F21D2A899F20F075A2 /* Pods_WeekMealDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F153D35C75D1DF96A2C734E9 /* Pods_WeekMealDebug.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CEABE243F75ACB969A93E1B8 /* Pods_WeekMealDebugTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76EDB4E9FF905888764F857 /* Pods_WeekMealDebugTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20E1560298870EF5B9E67732 /* Pods-WeekMealDebug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekMealDebug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeekMealDebug/Pods-WeekMealDebug.debug.xcconfig"; sourceTree = "<group>"; };
+		2C39D4A419C93D79D5F64088 /* Pods-WeekMealDebug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekMealDebug.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeekMealDebug/Pods-WeekMealDebug.release.xcconfig"; sourceTree = "<group>"; };
 		3C595B281FE810CC003011A5 /* WeekMealDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekMealDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C595B2B1FE810CC003011A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C595B2D1FE810CD003011A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,18 @@
 		3C595B471FE810CD003011A5 /* WeekMealDebugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeekMealDebugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C595B4B1FE810CD003011A5 /* WeekMealDebugUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekMealDebugUITests.swift; sourceTree = "<group>"; };
 		3C595B4D1FE810CD003011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433AAE271FE8483C0056F1B4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../../Users/louisrialland/Downloads/FirebaseTutorial/FirebaseTutorial/LoginViewController.swift; sourceTree = "<group>"; };
+		433AAE291FE848610056F1B4 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResetPasswordViewController.swift; path = ../../../../../Users/louisrialland/Downloads/FirebaseTutorial/FirebaseTutorial/ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		433AAE2A1FE848610056F1B4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../../../../../Users/louisrialland/Downloads/FirebaseTutorial/FirebaseTutorial/SignUpViewController.swift; sourceTree = "<group>"; };
+		433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		433AAE351FE915250056F1B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		69595E465CB0866E874516D1 /* Pods_WeekMealDebugUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeekMealDebugUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C96906FD5571EDDA49715F0 /* Pods-WeekMealDebugTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekMealDebugTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeekMealDebugTests/Pods-WeekMealDebugTests.release.xcconfig"; sourceTree = "<group>"; };
+		A74702EF6EBE181E0C961A05 /* Pods-WeekMealDebugUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekMealDebugUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeekMealDebugUITests/Pods-WeekMealDebugUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B80355F70DD3C366A43D8ECB /* Pods-WeekMealDebugTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekMealDebugTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeekMealDebugTests/Pods-WeekMealDebugTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1EDD0A765012FC288DA776F /* Pods-WeekMealDebugUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekMealDebugUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeekMealDebugUITests/Pods-WeekMealDebugUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F153D35C75D1DF96A2C734E9 /* Pods_WeekMealDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeekMealDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76EDB4E9FF905888764F857 /* Pods_WeekMealDebugTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeekMealDebugTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9679F21D2A899F20F075A2 /* Pods_WeekMealDebug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEABE243F75ACB969A93E1B8 /* Pods_WeekMealDebugTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E2F067A8376EB743E44C8CA /* Pods_WeekMealDebugUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,8 @@
 				3C595B3F1FE810CD003011A5 /* WeekMealDebugTests */,
 				3C595B4A1FE810CD003011A5 /* WeekMealDebugUITests */,
 				3C595B291FE810CC003011A5 /* Products */,
+				7C5DAB77972F77C9A71B366B /* Pods */,
+				7490F26A94595CC5E004D0AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +126,14 @@
 			children = (
 				3C595B2B1FE810CC003011A5 /* AppDelegate.swift */,
 				3C595B2D1FE810CD003011A5 /* ViewController.swift */,
+				433AAE291FE848610056F1B4 /* ResetPasswordViewController.swift */,
+				433AAE2A1FE848610056F1B4 /* SignUpViewController.swift */,
+				433AAE271FE8483C0056F1B4 /* LoginViewController.swift */,
+				433AAE351FE915250056F1B4 /* HomeViewController.swift */,
 				3C595B2F1FE810CD003011A5 /* Main.storyboard */,
 				3C595B321FE810CD003011A5 /* Assets.xcassets */,
 				3C595B341FE810CD003011A5 /* LaunchScreen.storyboard */,
+				433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */,
 				3C595B371FE810CD003011A5 /* Info.plist */,
 			);
 			path = WeekMealDebug;
@@ -125,6 +157,29 @@
 			path = WeekMealDebugUITests;
 			sourceTree = "<group>";
 		};
+		7490F26A94595CC5E004D0AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F153D35C75D1DF96A2C734E9 /* Pods_WeekMealDebug.framework */,
+				F76EDB4E9FF905888764F857 /* Pods_WeekMealDebugTests.framework */,
+				69595E465CB0866E874516D1 /* Pods_WeekMealDebugUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C5DAB77972F77C9A71B366B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20E1560298870EF5B9E67732 /* Pods-WeekMealDebug.debug.xcconfig */,
+				2C39D4A419C93D79D5F64088 /* Pods-WeekMealDebug.release.xcconfig */,
+				B80355F70DD3C366A43D8ECB /* Pods-WeekMealDebugTests.debug.xcconfig */,
+				8C96906FD5571EDDA49715F0 /* Pods-WeekMealDebugTests.release.xcconfig */,
+				D1EDD0A765012FC288DA776F /* Pods-WeekMealDebugUITests.debug.xcconfig */,
+				A74702EF6EBE181E0C961A05 /* Pods-WeekMealDebugUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C595B501FE810CD003011A5 /* Build configuration list for PBXNativeTarget "WeekMealDebug" */;
 			buildPhases = (
+				ECE1CAC86E96EF9BE5ABC3EA /* [CP] Check Pods Manifest.lock */,
 				3C595B241FE810CC003011A5 /* Sources */,
 				3C595B251FE810CC003011A5 /* Frameworks */,
 				3C595B261FE810CC003011A5 /* Resources */,
+				454139761D56A5AAB9002634 /* [CP] Embed Pods Frameworks */,
+				D1B0FC7BC8D486F1EA3BF7CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C595B531FE810CD003011A5 /* Build configuration list for PBXNativeTarget "WeekMealDebugTests" */;
 			buildPhases = (
+				403FBBB93825AB72493C70BA /* [CP] Check Pods Manifest.lock */,
 				3C595B381FE810CD003011A5 /* Sources */,
 				3C595B391FE810CD003011A5 /* Frameworks */,
 				3C595B3A1FE810CD003011A5 /* Resources */,
+				DBF3DE2318DCCDEBFC37F42A /* [CP] Embed Pods Frameworks */,
+				3937F9F8ED52D547C1AC5982 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C595B561FE810CD003011A5 /* Build configuration list for PBXNativeTarget "WeekMealDebugUITests" */;
 			buildPhases = (
+				0CFAF6498D006A2FFD061352 /* [CP] Check Pods Manifest.lock */,
 				3C595B431FE810CD003011A5 /* Sources */,
 				3C595B441FE810CD003011A5 /* Frameworks */,
 				3C595B451FE810CD003011A5 /* Resources */,
+				5EE62417C612FE58C1849CD6 /* [CP] Embed Pods Frameworks */,
+				D017EB72932C626529AE761A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C595B361FE810CD003011A5 /* LaunchScreen.storyboard in Resources */,
+				433AAE341FE90C470056F1B4 /* GoogleService-Info.plist in Resources */,
 				3C595B331FE810CD003011A5 /* Assets.xcassets in Resources */,
 				3C595B311FE810CD003011A5 /* Main.storyboard in Resources */,
 			);
@@ -254,13 +319,192 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CFAF6498D006A2FFD061352 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeekMealDebugUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3937F9F8ED52D547C1AC5982 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeekMealDebugTests/Pods-WeekMealDebugTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		403FBBB93825AB72493C70BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeekMealDebugTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		454139761D56A5AAB9002634 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeekMealDebug/Pods-WeekMealDebug-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeekMealDebug/Pods-WeekMealDebug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE62417C612FE58C1849CD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeekMealDebugUITests/Pods-WeekMealDebugUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D017EB72932C626529AE761A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeekMealDebugUITests/Pods-WeekMealDebugUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B0FC7BC8D486F1EA3BF7CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeekMealDebug/Pods-WeekMealDebug-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseGoogleAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseTwitterAuthUI.bundle,
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeekMealDebug/Pods-WeekMealDebug-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF3DE2318DCCDEBFC37F42A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeekMealDebugTests/Pods-WeekMealDebugTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECE1CAC86E96EF9BE5ABC3EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeekMealDebug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3C595B241FE810CC003011A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433AAE281FE8483C0056F1B4 /* LoginViewController.swift in Sources */,
 				3C595B2E1FE810CD003011A5 /* ViewController.swift in Sources */,
 				3C595B2C1FE810CD003011A5 /* AppDelegate.swift in Sources */,
+				433AAE2B1FE848610056F1B4 /* ResetPasswordViewController.swift in Sources */,
+				433AAE2C1FE848610056F1B4 /* SignUpViewController.swift in Sources */,
+				433AAE361FE915250056F1B4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,10 +668,11 @@
 		};
 		3C595B511FE810CD003011A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E1560298870EF5B9E67732 /* Pods-WeekMealDebug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U422B37AYQ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WeekMealDebug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weekmeal.WeekMealDebug;
@@ -439,10 +684,11 @@
 		};
 		3C595B521FE810CD003011A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C39D4A419C93D79D5F64088 /* Pods-WeekMealDebug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U422B37AYQ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WeekMealDebug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weekmeal.WeekMealDebug;
@@ -454,6 +700,7 @@
 		};
 		3C595B541FE810CD003011A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80355F70DD3C366A43D8ECB /* Pods-WeekMealDebugTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +718,7 @@
 		};
 		3C595B551FE810CD003011A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C96906FD5571EDDA49715F0 /* Pods-WeekMealDebugTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +736,7 @@
 		};
 		3C595B571FE810CD003011A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1EDD0A765012FC288DA776F /* Pods-WeekMealDebugUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +753,7 @@
 		};
 		3C595B581FE810CD003011A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74702EF6EBE181E0C961A05 /* Pods-WeekMealDebugUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
