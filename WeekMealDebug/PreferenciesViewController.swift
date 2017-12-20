@@ -10,41 +10,83 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class PreferenciesViewController: UIViewController {
+class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var refPreferencies: DatabaseReference!
     
     // Outlets
     @IBOutlet weak var CaloriesField: UITextField!
     @IBOutlet weak var DietField: UITextField!
-
+    let DietPicker = UIPickerView()
+    let DietPickerData = [String](arrayLiteral: "Vegan", "Vegetalien")
+    
+    @IBOutlet weak var MealsField: UITextField!
+    let MealsPicker = UIPickerView()
+    let MealsPickerData = [String](arrayLiteral: "7", "14")
+    
     @IBOutlet weak var CheeseImageView: UIImageView!
     
     @IBAction func LaunchSearchAction(_ sender: Any) {
         addPreference()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         CaloriesField.keyboardType = UIKeyboardType.numberPad
-
+        
+        DietField.inputView = DietPicker
+        DietPicker.delegate = self
+        MealsField.inputView = MealsPicker
+        MealsPicker.delegate = self
+        
         refPreferencies = Database.database().reference().child("preferencies")
     }
     
     //  Function addPreference
     func addPreference(){
-        print("yolo")
-        //and also getting the generated key
         let key = refPreferencies.childByAutoId().key
         
-        //creating artist with the given values
         let preference = ["id":key,
                           "calories": CaloriesField.text! as String,
                           "diet": DietField.text! as String,
+                          "meals": MealsField.text! as String,
                           "id_user": Auth.auth().currentUser?.uid
             ] as [String : Any]
         
-        //adding the artist inside the generated unique key
         refPreferencies.child(key).setValue(preference)
+    }
+
+    // MARK: UIPickerView Delegation
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        var countrows : Int = DietPickerData.count
+        if pickerView == MealsPicker {
+            countrows = self.MealsPickerData.count
+        }
+        return countrows
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView == DietPicker {
+            let titleRow = DietPickerData[row]
+            return titleRow
+        } else if pickerView == MealsPicker {
+            let titleRow = MealsPickerData[row]
+            return titleRow
+        }
+        return ""
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView == DietPicker {
+            self.DietField.text = self.DietPickerData[row]
+        } else if pickerView == MealsPicker {
+            self.MealsField.text = self.MealsPickerData[row]
+        }
     }
 }
 

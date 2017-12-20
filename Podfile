@@ -8,6 +8,7 @@ target 'WeekMealDebug' do
   pod 'FirebaseUI'
   pod 'Firebase/Auth'
   pod 'TwitterCore', '<=2.8.0'
+  pod 'IQKeyboardManagerSwift'
   
   # Pods for WeekMealDebug
 
