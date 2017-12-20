@@ -16,9 +16,10 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
     
     // Outlets
     @IBOutlet weak var CaloriesField: UITextField!
+    
     @IBOutlet weak var DietField: UITextField!
     let DietPicker = UIPickerView()
-    let DietPickerData = [String](arrayLiteral: "Vegan", "Vegetalien")
+    let DietPickerData = [String](arrayLiteral: "Vegan", "Vegetarian", "Gluten-free", "None")
     
     @IBOutlet weak var MealsField: UITextField!
     let MealsPicker = UIPickerView()

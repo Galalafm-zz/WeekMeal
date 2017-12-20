@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E2F067A8376EB743E44C8CA /* Pods_WeekMealDebugUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69595E465CB0866E874516D1 /* Pods_WeekMealDebugUITests.framework */; };
+		3C0688501FEAE31200D1883E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06884F1FEAE31200D1883E /* UserViewController.swift */; };
+		3C0688521FEAF56F00D1883E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0688511FEAF56F00D1883E /* CustomButton.swift */; };
 		3C15BAA71FE954F800BCC70C /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15BAA61FE954F800BCC70C /* ResetPasswordViewController.swift */; };
 		3C15BAA91FE9554300BCC70C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15BAA81FE9554300BCC70C /* SignUpViewController.swift */; };
 		3C15BAAB1FE9555100BCC70C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15BAAA1FE9555100BCC70C /* LoginViewController.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		20E1560298870EF5B9E67732 /* Pods-WeekMealDebug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekMealDebug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeekMealDebug/Pods-WeekMealDebug.debug.xcconfig"; sourceTree = "<group>"; };
 		2C39D4A419C93D79D5F64088 /* Pods-WeekMealDebug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekMealDebug.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeekMealDebug/Pods-WeekMealDebug.release.xcconfig"; sourceTree = "<group>"; };
+		3C06884F1FEAE31200D1883E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		3C0688511FEAF56F00D1883E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		3C15BAA61FE954F800BCC70C /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		3C15BAA81FE9554300BCC70C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3C15BAAA1FE9555100BCC70C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				3C15BAA81FE9554300BCC70C /* SignUpViewController.swift */,
 				3C15BAAA1FE9555100BCC70C /* LoginViewController.swift */,
 				3C8C64111FE9647A000BB688 /* PreferenciesViewController.swift */,
+				3C06884F1FEAE31200D1883E /* UserViewController.swift */,
+				3C0688511FEAF56F00D1883E /* CustomButton.swift */,
 			);
 			path = WeekMealDebug;
 			sourceTree = "<group>";
@@ -531,6 +537,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C8C64121FE9647A000BB688 /* PreferenciesViewController.swift in Sources */,
+				3C0688501FEAE31200D1883E /* UserViewController.swift in Sources */,
+				3C0688521FEAF56F00D1883E /* CustomButton.swift in Sources */,
 				3C15BAAB1FE9555100BCC70C /* LoginViewController.swift in Sources */,
 				3C595B2E1FE810CD003011A5 /* ViewController.swift in Sources */,
 				3C15BAA91FE9554300BCC70C /* SignUpViewController.swift in Sources */,
