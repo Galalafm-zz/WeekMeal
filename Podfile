@@ -6,7 +6,12 @@ target 'WeekMealDebug' do
   use_frameworks!
   pod 'Firebase/Core'
   pod 'FirebaseUI'
+  pod 'Firebase/Auth'
   pod 'TwitterCore', '<=2.8.0'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+
   # Pods for WeekMealDebug
 
   target 'WeekMealDebugTests' do

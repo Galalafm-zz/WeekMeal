@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5.5999999999999996" y="29.23538230884558"/>
+            <point key="canvasLocation" x="-343" y="-61"/>
         </scene>
         <!--Inscription-->
         <scene sceneID="x3l-no-Q2b">
@@ -250,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjp-vX-cwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1626.4000000000001" y="520.38980509745136"/>
+            <point key="canvasLocation" x="2327" y="555"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
