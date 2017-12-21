@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -67,10 +68,9 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Accueil")
                     self.present(vc!, animated: true, completion: nil)
                     
-                    let key = self.refUsers.childByAutoId().key
+                    let key = Auth.auth().currentUser?.uid
                     
-                    let user = ["id": Auth.auth().currentUser?.uid,
-                                "age": self.SliderLabel.text! as String,
+                    let user = ["age": self.SliderLabel.text! as String,
                                 "gender": self.GenderControl.selectedSegmentIndex as Int,
                                 "city": self.CityField.text! as String,
                                 "diet": self.DietField.text! as String,
@@ -84,7 +84,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                                 "accepted_meals": [] as Array
                         ] as [String : Any]
                     
-                    self.refUsers.child(key).setValue(user)
+                    self.refUsers.child(key!).setValue(user)
                     
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
