@@ -24,14 +24,9 @@
 		3C595B411FE810CD003011A5 /* WeekMealDebugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B401FE810CD003011A5 /* WeekMealDebugTests.swift */; };
 		3C595B4C1FE810CD003011A5 /* WeekMealDebugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B4B1FE810CD003011A5 /* WeekMealDebugUITests.swift */; };
 		3C8C64121FE9647A000BB688 /* PreferenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C64111FE9647A000BB688 /* PreferenciesViewController.swift */; };
-<<<<<<< HEAD
 		430C070D1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C070C1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift */; };
 		430C070F1FEA9E7600FE68ED /* PreferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C070E1FEA9E7600FE68ED /* PreferenceModel.swift */; };
 		430C07111FEAAD1B00FE68ED /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C07101FEAAD1B00FE68ED /* RecipeViewController.swift */; };
-=======
-		3CF04D6E1FEB5162001B32C3 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF04D6D1FEB5162001B32C3 /* OnBoardingViewController.swift */; };
-		3CF04D701FEB51D0001B32C3 /* Slider1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF04D6F1FEB51D0001B32C3 /* Slider1ViewController.swift */; };
->>>>>>> 65a7cb670b942556b92c0d6c309cd3b11ddbb7de
 		433AAE341FE90C470056F1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */; };
 		433AAE361FE915250056F1B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433AAE351FE915250056F1B4 /* HomeViewController.swift */; };
 		AD9679F21D2A899F20F075A2 /* Pods_WeekMealDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F153D35C75D1DF96A2C734E9 /* Pods_WeekMealDebug.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
