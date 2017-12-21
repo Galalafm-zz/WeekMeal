@@ -41,6 +41,8 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     @IBAction func CreateAccountAction(_ sender: AnyObject) {
         
+        Analytics.logEvent("sign_up", parameters: nil)
+        
         if EmailField.text == "" {
             let alertController = UIAlertController(title: "Empty field...", message: "Please, do not forget to enter an email address !", preferredStyle: .alert)
             
@@ -71,6 +73,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                     let key = Auth.auth().currentUser?.uid
                     
                     let user = ["age": self.SliderLabel.text! as String,
+                                "email": self.EmailField.text! as String,
                                 "gender": self.GenderControl.selectedSegmentIndex as Int,
                                 "city": self.CityField.text! as String,
                                 "diet": self.DietField.text! as String,
@@ -85,6 +88,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                         ] as [String : Any]
                     
                     self.refUsers.child(key!).setValue(user)
+//                    Analytics.setUserProperty(age, forName: "age")
                     
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
