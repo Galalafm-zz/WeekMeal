@@ -23,14 +23,11 @@
 		3C595B411FE810CD003011A5 /* WeekMealDebugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B401FE810CD003011A5 /* WeekMealDebugTests.swift */; };
 		3C595B4C1FE810CD003011A5 /* WeekMealDebugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B4B1FE810CD003011A5 /* WeekMealDebugUITests.swift */; };
 		3C8C64121FE9647A000BB688 /* PreferenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C64111FE9647A000BB688 /* PreferenciesViewController.swift */; };
-<<<<<<< HEAD
 		3CB9507F1FEBDBB7000C9DA4 /* CustomButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9507E1FEBDBB7000C9DA4 /* CustomButton2.swift */; };
 		3CB950811FEBDC73000C9DA4 /* BoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB950801FEBDC73000C9DA4 /* BoardingViewController.swift */; };
-=======
 		430C070D1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C070C1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift */; };
 		430C070F1FEA9E7600FE68ED /* PreferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C070E1FEA9E7600FE68ED /* PreferenceModel.swift */; };
 		430C07111FEAAD1B00FE68ED /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C07101FEAAD1B00FE68ED /* RecipeViewController.swift */; };
->>>>>>> 67acd31a9813ef7d6c8e63ec3662c3414b1288e7
 		433AAE341FE90C470056F1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */; };
 		433AAE361FE915250056F1B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433AAE351FE915250056F1B4 /* HomeViewController.swift */; };
 		AD9679F21D2A899F20F075A2 /* Pods_WeekMealDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F153D35C75D1DF96A2C734E9 /* Pods_WeekMealDebug.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -87,16 +84,13 @@
 		3CA004121FE9A02F00A18543 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
 		3CA004131FE9A02F00A18543 /* BEMPathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
 		3CA004141FE9A02F00A18543 /* BEMPathManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		3CB9507E1FEBDBB7000C9DA4 /* CustomButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton2.swift; sourceTree = "<group>"; };
 		3CB950801FEBDC73000C9DA4 /* BoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingViewController.swift; sourceTree = "<group>"; };
-=======
 		430C070C1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		430C070E1FEA9E7600FE68ED /* PreferenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceModel.swift; sourceTree = "<group>"; };
 		430C07101FEAAD1B00FE68ED /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		3CF04D6D1FEB5162001B32C3 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		3CF04D6F1FEB51D0001B32C3 /* Slider1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider1ViewController.swift; sourceTree = "<group>"; };
->>>>>>> 67acd31a9813ef7d6c8e63ec3662c3414b1288e7
 		433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		433AAE351FE915250056F1B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		69595E465CB0866E874516D1 /* Pods_WeekMealDebugUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeekMealDebugUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -583,13 +577,10 @@
 				3C0688501FEAE31200D1883E /* UserViewController.swift in Sources */,
 				3C0688521FEAF56F00D1883E /* CustomButton.swift in Sources */,
 				3C15BAAB1FE9555100BCC70C /* LoginViewController.swift in Sources */,
-<<<<<<< HEAD
-=======
 				430C070D1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift in Sources */,
 				3C595B2E1FE810CD003011A5 /* ViewController.swift in Sources */,
 				430C07111FEAAD1B00FE68ED /* RecipeViewController.swift in Sources */,
 				3CF04D701FEB51D0001B32C3 /* Slider1ViewController.swift in Sources */,
->>>>>>> 67acd31a9813ef7d6c8e63ec3662c3414b1288e7
 				3C15BAA91FE9554300BCC70C /* SignUpViewController.swift in Sources */,
 				3C595B2C1FE810CD003011A5 /* AppDelegate.swift in Sources */,
 				430C070F1FEA9E7600FE68ED /* PreferenceModel.swift in Sources */,
