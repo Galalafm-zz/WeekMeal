@@ -14,9 +14,9 @@ import FirebaseDatabase
 
 class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    var refPreferencies: DatabaseReference!
-
     var refUsers: DatabaseReference!
+
+ 
 
     // Outlets
     @IBOutlet weak var CaloriesField: UITextField!
@@ -43,6 +43,7 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
         DietPicker.delegate = self
         MealsField.inputView = MealsPicker
         MealsPicker.delegate = self
+        refUsers = Database.database().reference().child("users")
 
     }
 
@@ -57,8 +58,10 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
         let preferences = ["calories": CaloriesInt as! Int,
                            "week_diet": DietField.text! as String,
             ] as [String : Any]
-
-        self.refUsers.child("users").child(user_uid!).setValue(["calories": CaloriesInt])
+        print("Calories",CaloriesInt)
+        print("Calories",CaloriesText)
+        print(self.refUsers.child("users").child(user_uid!))
+        self.refUsers.child(user_uid!).updateChildValues(["calories": CaloriesText])
 
     }
 
