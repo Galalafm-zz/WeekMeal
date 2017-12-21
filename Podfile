@@ -8,8 +8,8 @@ target 'WeekMealDebug' do
   pod 'FirebaseUI'
   pod 'Firebase/Auth'
   pod 'TwitterCore', '<=2.8.0'
-  
-  # Pods for WeekMealDebug
+  pod 'IQKeyboardManagerSwift'
+  pod 'SwiftyJSON', '4.0.0'
 
   target 'WeekMealDebugTests' do
     inherit! :search_paths
