@@ -19,8 +19,6 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
     var refUsers: DatabaseReference!
 
     // Outlets
-    @IBOutlet weak var tableViewPreferencies: UITableView!
-
     @IBOutlet weak var CaloriesField: UITextField!
 
     @IBOutlet weak var DietField: UITextField!
@@ -52,6 +50,7 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
     func updatePreference(){
 
         let user_uid = Auth.auth().currentUser?.uid
+        print(user_uid)
 
         let CaloriesText: String!  = CaloriesField.text!
         let CaloriesInt = Int(CaloriesText)

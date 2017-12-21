@@ -26,7 +26,6 @@
 		3CB9507F1FEBDBB7000C9DA4 /* CustomButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9507E1FEBDBB7000C9DA4 /* CustomButton2.swift */; };
 		3CB950811FEBDC73000C9DA4 /* BoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB950801FEBDC73000C9DA4 /* BoardingViewController.swift */; };
 		430C070D1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C070C1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift */; };
-		430C070F1FEA9E7600FE68ED /* PreferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C070E1FEA9E7600FE68ED /* PreferenceModel.swift */; };
 		430C07111FEAAD1B00FE68ED /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C07101FEAAD1B00FE68ED /* RecipeViewController.swift */; };
 		433AAE341FE90C470056F1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */; };
 		433AAE361FE915250056F1B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433AAE351FE915250056F1B4 /* HomeViewController.swift */; };
@@ -87,7 +86,6 @@
 		3CB9507E1FEBDBB7000C9DA4 /* CustomButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton2.swift; sourceTree = "<group>"; };
 		3CB950801FEBDC73000C9DA4 /* BoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingViewController.swift; sourceTree = "<group>"; };
 		430C070C1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
-		430C070E1FEA9E7600FE68ED /* PreferenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceModel.swift; sourceTree = "<group>"; };
 		430C07101FEAAD1B00FE68ED /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		433AAE351FE915250056F1B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 				3C15BAAA1FE9555100BCC70C /* LoginViewController.swift */,
 				3C8C64111FE9647A000BB688 /* PreferenciesViewController.swift */,
 				430C070C1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift */,
-				430C070E1FEA9E7600FE68ED /* PreferenceModel.swift */,
 				430C07101FEAAD1B00FE68ED /* RecipeViewController.swift */,
 				3C06884F1FEAE31200D1883E /* UserViewController.swift */,
 				3C0688511FEAF56F00D1883E /* CustomButton.swift */,
@@ -579,7 +576,6 @@
 				430C07111FEAAD1B00FE68ED /* RecipeViewController.swift in Sources */,
 				3C15BAA91FE9554300BCC70C /* SignUpViewController.swift in Sources */,
 				3C595B2C1FE810CD003011A5 /* AppDelegate.swift in Sources */,
-				430C070F1FEA9E7600FE68ED /* PreferenceModel.swift in Sources */,
 				433AAE361FE915250056F1B4 /* HomeViewController.swift in Sources */,
 				3C15BAA71FE954F800BCC70C /* ResetPasswordViewController.swift in Sources */,
 				3CB9507F1FEBDBB7000C9DA4 /* CustomButton2.swift in Sources */,

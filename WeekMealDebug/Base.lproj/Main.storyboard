@@ -225,20 +225,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Préférences de la semaine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GK-g4-6vr">
-                                <rect key="frame" x="50" y="56" width="254" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restrictions alimentaires" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63o-4L-oq0">
-                                <rect key="frame" x="13" y="109" width="188" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Votre objectif calorique" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naY-Zn-caA">
                                 <rect key="frame" x="13" y="142" width="188" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -316,8 +302,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuy-f1-g4v">
+                                <rect key="frame" x="0.0" y="14" width="375" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                                    <color key="textColor" red="0.27461180089999998" green="0.27460506559999998" blue="0.27460640670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="WEEK PREFERENCES" id="LLS-gu-w6D"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOD RESTRICTIONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-0f-u6M">
+                                <rect key="frame" x="16" y="93" width="343" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <color key="textColor" red="0.27461180089999998" green="0.27460506559999998" blue="0.27460640670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vuy-f1-g4v" firstAttribute="trailing" secondItem="hER-Qa-8lU" secondAttribute="trailing" id="1Cv-JO-HsW"/>
+                            <constraint firstItem="hER-Qa-8lU" firstAttribute="trailing" secondItem="eDo-0f-u6M" secondAttribute="trailing" constant="16" id="27T-CX-Owk"/>
+                            <constraint firstItem="vuy-f1-g4v" firstAttribute="leading" secondItem="hER-Qa-8lU" secondAttribute="leading" id="5yV-0I-Laf"/>
+                            <constraint firstItem="vuy-f1-g4v" firstAttribute="top" secondItem="Cda-RC-38b" secondAttribute="top" constant="14" id="6aF-Do-vLf"/>
+                            <constraint firstItem="eDo-0f-u6M" firstAttribute="leading" secondItem="hER-Qa-8lU" secondAttribute="leading" constant="16" id="FVs-nt-Ecv"/>
+                            <constraint firstItem="eDo-0f-u6M" firstAttribute="top" secondItem="vuy-f1-g4v" secondAttribute="bottom" constant="35" id="t0f-XF-AoL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hER-Qa-8lU"/>
                     </view>
                     <connections>
@@ -414,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLN-Zh-uhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2176.8000000000002" y="567.16641679160421"/>
+            <point key="canvasLocation" x="2644" y="818"/>
         </scene>
         <!--User View Controller-->
         <scene sceneID="vmm-lG-21z">
@@ -541,7 +552,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.27461180089999998" green="0.27460506559999998" blue="0.27460640670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOD INFORMATIONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edx-6e-SUr">
                                                 <rect key="frame" x="16" y="595.5" width="343" height="17"/>
@@ -562,7 +573,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.27461180089999998" green="0.27460506559999998" blue="0.27460640670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have any allergies ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDI-HT-tZF">
                                                 <rect key="frame" x="16" y="739" width="343" height="18.5"/>
@@ -577,7 +588,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.27461180089999998" green="0.27460506559999998" blue="0.27460640670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have any food intolerances ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLh-XE-w6Y">
                                                 <rect key="frame" x="16" y="840.5" width="343" height="18.5"/>
@@ -592,7 +603,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.27461180089999998" green="0.27460506559999998" blue="0.27460640670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
