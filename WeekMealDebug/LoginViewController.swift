@@ -22,9 +22,9 @@ class LoginViewController: UIViewController {
             
             //Alert the user that he have not insert email
             
-            let alertController = UIAlertController(title: "Mauvaise recette...", message: "Veuillez ne pas oublier de rentrer une addresse mail", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Bad recipe...", message: "Please, do not forget to enter an email address !", preferredStyle: .alert)
             
-            let defaultAction = UIAlertAction(title: "J'ai compris", style: .cancel, handler: nil)
+            let defaultAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             
             self.present(alertController, animated: true, completion: nil)
@@ -34,9 +34,9 @@ class LoginViewController: UIViewController {
             
             //Alert the user that he have not insert password
             
-            let alertController = UIAlertController(title: "Mauvaise recette...", message: "Veuillez ne pas oublier de rentrer un mot de passe", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Bad recipe...", message: "Please, do not forget to enter a password !", preferredStyle: .alert)
             
-            let defaultAction = UIAlertAction(title: "J'ai compris", style: .cancel, handler: nil)
+            let defaultAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             
             self.present(alertController, animated: true, completion: nil)
@@ -50,18 +50,17 @@ class LoginViewController: UIViewController {
                 if error == nil {
                     
                     //Print into the console if successfully logged in
-                    print("Vous êtes maintenant connecté !")
+                    print("You're successfully connected !")
                     
                     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Preferencies")
                     self.present(vc, animated: true, completion: nil)
                     
                     
                 } else {
-                    print("erreu")
                     //Tells the user that there is an error and then gets firebase to tell them the error
-                    let alertController = UIAlertController(title: "Mauvaise recette...", message: error?.localizedDescription, preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Bad recipe...", message: error?.localizedDescription, preferredStyle: .alert)
                     
-                    let defaultAction = UIAlertAction(title: "J'ai compris", style: .cancel, handler: nil)
+                    let defaultAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
                     
                     self.present(alertController, animated: true, completion: nil)
