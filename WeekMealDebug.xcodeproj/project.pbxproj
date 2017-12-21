@@ -13,9 +13,6 @@
 		3C15BAA71FE954F800BCC70C /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15BAA61FE954F800BCC70C /* ResetPasswordViewController.swift */; };
 		3C15BAA91FE9554300BCC70C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15BAA81FE9554300BCC70C /* SignUpViewController.swift */; };
 		3C15BAAB1FE9555100BCC70C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15BAAA1FE9555100BCC70C /* LoginViewController.swift */; };
-		3C465E091FEB4BC000F7E8D9 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C465E081FEB4BB400F7E8D9 /* SF-Pro-Display-Heavy.otf */; };
-		3C465E0A1FEB4BC300F7E8D9 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C465E071FEB4BB400F7E8D9 /* SF-Pro-Display-Bold.otf */; };
-		3C465E0B1FEB4BC500F7E8D9 /* Athelas.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 3C465E061FEB4BB400F7E8D9 /* Athelas.ttc */; };
 		3C595B2C1FE810CD003011A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B2B1FE810CC003011A5 /* AppDelegate.swift */; };
 		3C595B311FE810CD003011A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C595B2F1FE810CD003011A5 /* Main.storyboard */; };
 		3C595B331FE810CD003011A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C595B321FE810CD003011A5 /* Assets.xcassets */; };
@@ -23,14 +20,14 @@
 		3C595B411FE810CD003011A5 /* WeekMealDebugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B401FE810CD003011A5 /* WeekMealDebugTests.swift */; };
 		3C595B4C1FE810CD003011A5 /* WeekMealDebugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C595B4B1FE810CD003011A5 /* WeekMealDebugUITests.swift */; };
 		3C8C64121FE9647A000BB688 /* PreferenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C64111FE9647A000BB688 /* PreferenciesViewController.swift */; };
-<<<<<<< HEAD
+		3CAFD3321FEC245B00031068 /* Athelas.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 3C5271C81FEC23A000421407 /* Athelas.ttc */; };
+		3CAFD3331FEC245F00031068 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C5271C91FEC23A000421407 /* SF-Pro-Display-Bold.otf */; };
+		3CAFD3341FEC246100031068 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C5271CA1FEC23A000421407 /* SF-Pro-Display-Heavy.otf */; };
 		3CB9507F1FEBDBB7000C9DA4 /* CustomButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9507E1FEBDBB7000C9DA4 /* CustomButton2.swift */; };
 		3CB950811FEBDC73000C9DA4 /* BoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB950801FEBDC73000C9DA4 /* BoardingViewController.swift */; };
-=======
 		430C070D1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C070C1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift */; };
 		430C070F1FEA9E7600FE68ED /* PreferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C070E1FEA9E7600FE68ED /* PreferenceModel.swift */; };
 		430C07111FEAAD1B00FE68ED /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C07101FEAAD1B00FE68ED /* RecipeViewController.swift */; };
->>>>>>> 67acd31a9813ef7d6c8e63ec3662c3414b1288e7
 		433AAE341FE90C470056F1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */; };
 		433AAE361FE915250056F1B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433AAE351FE915250056F1B4 /* HomeViewController.swift */; };
 		AD9679F21D2A899F20F075A2 /* Pods_WeekMealDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F153D35C75D1DF96A2C734E9 /* Pods_WeekMealDebug.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -62,9 +59,9 @@
 		3C15BAA61FE954F800BCC70C /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		3C15BAA81FE9554300BCC70C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3C15BAAA1FE9555100BCC70C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3C465E061FEB4BB400F7E8D9 /* Athelas.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Athelas.ttc; sourceTree = "<group>"; };
-		3C465E071FEB4BB400F7E8D9 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
-		3C465E081FEB4BB400F7E8D9 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		3C5271C81FEC23A000421407 /* Athelas.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Athelas.ttc; sourceTree = "<group>"; };
+		3C5271C91FEC23A000421407 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		3C5271CA1FEC23A000421407 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
 		3C595B281FE810CC003011A5 /* WeekMealDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekMealDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C595B2B1FE810CC003011A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C595B301FE810CD003011A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,16 +84,11 @@
 		3CA004121FE9A02F00A18543 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
 		3CA004131FE9A02F00A18543 /* BEMPathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
 		3CA004141FE9A02F00A18543 /* BEMPathManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		3CB9507E1FEBDBB7000C9DA4 /* CustomButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton2.swift; sourceTree = "<group>"; };
 		3CB950801FEBDC73000C9DA4 /* BoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingViewController.swift; sourceTree = "<group>"; };
-=======
 		430C070C1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		430C070E1FEA9E7600FE68ED /* PreferenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceModel.swift; sourceTree = "<group>"; };
 		430C07101FEAAD1B00FE68ED /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
-		3CF04D6D1FEB5162001B32C3 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-		3CF04D6F1FEB51D0001B32C3 /* Slider1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider1ViewController.swift; sourceTree = "<group>"; };
->>>>>>> 67acd31a9813ef7d6c8e63ec3662c3414b1288e7
 		433AAE331FE90C460056F1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		433AAE351FE915250056F1B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		69595E465CB0866E874516D1 /* Pods_WeekMealDebugUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeekMealDebugUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,12 +128,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C465E051FEB4BB400F7E8D9 /* fonts */ = {
+		3C5271C71FEC23A000421407 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				3C465E061FEB4BB400F7E8D9 /* Athelas.ttc */,
-				3C465E071FEB4BB400F7E8D9 /* SF-Pro-Display-Bold.otf */,
-				3C465E081FEB4BB400F7E8D9 /* SF-Pro-Display-Heavy.otf */,
+				3C5271C81FEC23A000421407 /* Athelas.ttc */,
+				3C5271C91FEC23A000421407 /* SF-Pro-Display-Bold.otf */,
+				3C5271CA1FEC23A000421407 /* SF-Pro-Display-Heavy.otf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -171,7 +163,7 @@
 		3C595B2A1FE810CC003011A5 /* WeekMealDebug */ = {
 			isa = PBXGroup;
 			children = (
-				3C465E051FEB4BB400F7E8D9 /* fonts */,
+				3C5271C71FEC23A000421407 /* fonts */,
 				3CA0040C1FE9A02F00A18543 /* Classes */,
 				3C5BE3AC1FE99DED00437226 /* WeekMealDebugHeader.h */,
 				3C595B2B1FE810CC003011A5 /* AppDelegate.swift */,
@@ -368,10 +360,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CAFD3321FEC245B00031068 /* Athelas.ttc in Resources */,
 				3C595B361FE810CD003011A5 /* LaunchScreen.storyboard in Resources */,
-				3C465E091FEB4BC000F7E8D9 /* SF-Pro-Display-Heavy.otf in Resources */,
-				3C465E0A1FEB4BC300F7E8D9 /* SF-Pro-Display-Bold.otf in Resources */,
-				3C465E0B1FEB4BC500F7E8D9 /* Athelas.ttc in Resources */,
+				3CAFD3341FEC246100031068 /* SF-Pro-Display-Heavy.otf in Resources */,
+				3CAFD3331FEC245F00031068 /* SF-Pro-Display-Bold.otf in Resources */,
 				433AAE341FE90C470056F1B4 /* GoogleService-Info.plist in Resources */,
 				3C595B331FE810CD003011A5 /* Assets.xcassets in Resources */,
 				3C595B311FE810CD003011A5 /* Main.storyboard in Resources */,
@@ -521,11 +513,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeekMealDebug/Pods-WeekMealDebug-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseGoogleAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseGoogleAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseTwitterAuthUI.bundle,
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle",
 			);
@@ -583,13 +575,8 @@
 				3C0688501FEAE31200D1883E /* UserViewController.swift in Sources */,
 				3C0688521FEAF56F00D1883E /* CustomButton.swift in Sources */,
 				3C15BAAB1FE9555100BCC70C /* LoginViewController.swift in Sources */,
-<<<<<<< HEAD
-=======
 				430C070D1FEA9D8000FE68ED /* ViewControllerTableViewCell.swift in Sources */,
-				3C595B2E1FE810CD003011A5 /* ViewController.swift in Sources */,
 				430C07111FEAAD1B00FE68ED /* RecipeViewController.swift in Sources */,
-				3CF04D701FEB51D0001B32C3 /* Slider1ViewController.swift in Sources */,
->>>>>>> 67acd31a9813ef7d6c8e63ec3662c3414b1288e7
 				3C15BAA91FE9554300BCC70C /* SignUpViewController.swift in Sources */,
 				3C595B2C1FE810CD003011A5 /* AppDelegate.swift in Sources */,
 				430C070F1FEA9E7600FE68ED /* PreferenceModel.swift in Sources */,

@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
-class PreferenciesViewController: UIViewController , UITableViewDelegate, UITableViewDataSource ,UIPickerViewDelegate, UIPickerViewDataSource{
+class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var refPreferencies: DatabaseReference!
     
