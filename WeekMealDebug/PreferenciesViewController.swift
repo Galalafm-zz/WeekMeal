@@ -11,11 +11,15 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
-class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class PreferenciesViewController: UIViewController , UITableViewDelegate, UITableViewDataSource ,UIPickerViewDelegate, UIPickerViewDataSource{
+    
+    var refPreferencies: DatabaseReference!
     
     var refUsers: DatabaseReference!
     
     // Outlets
+    @IBOutlet weak var tableViewPreferencies: UITableView!
+    
     @IBOutlet weak var CaloriesField: UITextField!
     
     @IBOutlet weak var DietField: UITextField!
