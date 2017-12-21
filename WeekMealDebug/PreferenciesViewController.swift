@@ -9,8 +9,11 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    var refUsers: DatabaseReference!
     
     // Outlets
     @IBOutlet weak var CaloriesField: UITextField!
@@ -26,7 +29,7 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
     @IBOutlet weak var CheeseImageView: UIImageView!
     
     @IBAction func LaunchSearchAction(_ sender: Any) {
-        addPreference()
+        updatePreference()
     }
     
     override func viewDidLoad() {
@@ -40,9 +43,19 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
         
     }
     
-    //  Function addPreference
-    func addPreference(){
-       
+    //  Function updatePreference
+    func updatePreference(){
+        
+        let user_uid = Auth.auth().currentUser?.uid
+        
+        let CaloriesText: String!  = CaloriesField.text!
+        let CaloriesInt = Int(CaloriesText)
+        let preferences = ["calories": CaloriesInt as! Int,
+                           "week_diet": DietField.text! as String,
+            ] as [String : Any]
+        
+        self.refUsers.child("users").child(user_uid!).setValue(["calories": CaloriesInt])
+        
     }
 
     // MARK: UIPickerView Delegation
@@ -78,4 +91,3 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
         }
     }
 }
-
