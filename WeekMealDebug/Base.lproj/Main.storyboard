@@ -32,13 +32,16 @@
                                 <rect key="frame" x="124" y="30" width="127" height="186"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s find out together what will be your next meals." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byy-FG-RDQ">
-                                <rect key="frame" x="48" y="197" width="279" height="51.5"/>
+                                <rect key="frame" x="48" y="197" width="279" height="53"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPl-jb-NP7" customClass="CustomButton2" customModule="WeekMealDebug" customModuleProvider="target">
-                                <rect key="frame" x="16" y="441" width="343" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPl-jb-NP7" customClass="CustomButton2" customModule="WeekMealDebug" customModuleProvider="target">
+                                <rect key="frame" x="16" y="441" width="343" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Z94-gi-MWz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
                                 <color key="tintColor" red="0.9882349101609198" green="1" blue="0.99065881439792913" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="CONNECT WITH YOUR EMAIL">
@@ -84,19 +87,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsc-v1-7dZ">
-                                <rect key="frame" x="16" y="104" width="343" height="14.5"/>
+                                <rect key="frame" x="16" y="108" width="343" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.27461180090904236" green="0.27460506558418274" blue="0.27460640668869019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsm-3C-8f0">
-                                <rect key="frame" x="16" y="180.5" width="343" height="14.5"/>
+                                <rect key="frame" x="16" y="184.5" width="343" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.27461180090904236" green="0.27460506558418274" blue="0.27460640668869019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZId-Tn-EYg">
-                                <rect key="frame" x="16" y="203" width="343" height="30"/>
+                                <rect key="frame" x="16" y="207" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -110,7 +113,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bhd-oN-coI">
-                                <rect key="frame" x="16" y="126.5" width="343.5" height="30"/>
+                                <rect key="frame" x="16" y="130.5" width="343.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -123,7 +126,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFi-GA-Ez6">
-                                <rect key="frame" x="0.0" y="25" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="25" width="375" height="48"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
@@ -303,7 +306,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuy-f1-g4v">
-                                <rect key="frame" x="0.0" y="14" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="14" width="375" height="48"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
@@ -314,7 +317,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOD RESTRICTIONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-0f-u6M">
-                                <rect key="frame" x="16" y="93" width="343" height="17"/>
+                                <rect key="frame" x="16" y="97" width="343" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
                                 <color key="textColor" red="0.27461180089999998" green="0.27460506559999998" blue="0.27460640670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -445,7 +448,6 @@
         <!--SignUp-->
         <scene sceneID="4kj-IX-J3x">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="buW-4D-fEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController restorationIdentifier="Inscription" storyboardIdentifier="Inscription" title="SignUp" id="rjr-Gk-nQB" customClass="SignUpViewController" customModule="WeekMealDebug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s0p-pk-0FH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
@@ -691,7 +693,7 @@
                                 </constraints>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiz-dV-5ib">
-                                <rect key="frame" x="0.0" y="14" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="14" width="375" height="48"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
@@ -731,6 +733,7 @@
                         <outlet property="SliderLabel" destination="9yU-8M-K2f" id="PPv-jI-qsJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buW-4D-fEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="524" y="126"/>
         </scene>

@@ -16,8 +16,6 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
 
     var refUsers: DatabaseReference!
 
- 
-
     // Outlets
     @IBOutlet weak var CaloriesField: UITextField!
 
@@ -47,22 +45,25 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
 
     }
 
-    //  Function updatePreference
+    // Function updatePreference
     func updatePreference(){
 
         let user_uid = Auth.auth().currentUser?.uid
-        print(user_uid)
-
+        
+        // Convert Calories String to Int MARCHE PAS
         let CaloriesText: String!  = CaloriesField.text!
-        let CaloriesInt = Int(CaloriesText)
-        let preferences = ["calories": CaloriesInt as! Int,
-                           "week_diet": DietField.text! as String,
-            ] as [String : Any]
-        print("Calories",CaloriesInt)
-        print("Calories",CaloriesText)
+        _ = Int(CaloriesText)
+
         print(self.refUsers.child("users").child(user_uid!))
         self.refUsers.child(user_uid!).updateChildValues(["calories": CaloriesText])
-
+        self.refUsers.child(user_uid!).updateChildValues(["week_diet": DietField.text!])
+        
+        // Analytics
+        
+        //convert calories string to int
+        Analytics.setUserProperty(self.CaloriesField.text!, forName:"calories")
+        Analytics.setUserProperty(self.MealsField.text!, forName:"meals")
+        Analytics.setUserProperty(self.DietField.text!, forName:"week_diet")
     }
 
     // MARK: UIPickerView Delegation

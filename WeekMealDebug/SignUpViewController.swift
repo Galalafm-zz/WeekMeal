@@ -40,8 +40,10 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         SliderLabel.text = "\(currentValue)"
     }
     @IBAction func CreateAccountAction(_ sender: AnyObject) {
-        
-        Analytics.logEvent("sign_up", parameters: nil)
+//
+//        Analytics.logEvent("sign_up", parameters: [
+//            "city": self.CityField.text!,
+//            ])
         
         if EmailField.text == "" {
             let alertController = UIAlertController(title: "Empty field...", message: "Please, do not forget to enter an email address !", preferredStyle: .alert)
@@ -88,7 +90,15 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                         ] as [String : Any]
                     
                     self.refUsers.child(key!).setValue(user)
-//                    Analytics.setUserProperty(age, forName: "age")
+                    
+                    // Analytics
+                    
+                    //convert age string to int
+                    Analytics.setUserProperty(self.SliderLabel.text!, forName:"age")
+                    Analytics.setUserProperty(self.CityField.text!, forName:"city")
+                    Analytics.setUserProperty(self.DietField.text!, forName:"diet")
+                    Analytics.setUserProperty(self.AllergyField.text!, forName:"allergics")
+                    Analytics.setUserProperty(self.IntoleranceField.text!, forName:"intolerances")
                     
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
