@@ -12,12 +12,17 @@ import FirebaseAuth
 
 class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    var refUsers: DatabaseReference!
+    
     //Outlets
     @IBOutlet weak var EmailField: UITextField!
     @IBOutlet weak var PasswordField: UITextField!
     
-    @IBOutlet weak var GenderField: UISegmentedControl!
+    // 0 = Male & 1 = Female
+    @IBOutlet weak var GenderControl: UISegmentedControl!
     
+    @IBOutlet weak var SliderLabel: UILabel!
+    @IBOutlet weak var AgeSlider: UISlider!
     @IBOutlet weak var CityField: UITextField!
     
     @IBOutlet weak var DietField: UITextField!
@@ -25,8 +30,14 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     let DietPickerData = [String](arrayLiteral: "Vegan", "Vegetarian", "Diabetic", "None")
     
     @IBOutlet weak var AllergyField: UITextField!
+    @IBOutlet weak var IntoleranceField: UITextField!
     
     //Actions
+    @IBAction func SliderAction(_ sender: UISlider) {
+        let currentValue = Int(sender.value)
+        
+        SliderLabel.text = "\(currentValue)"
+    }
     @IBAction func CreateAccountAction(_ sender: AnyObject) {
         
         if EmailField.text == "" {
@@ -56,6 +67,25 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Accueil")
                     self.present(vc!, animated: true, completion: nil)
                     
+                    let key = self.refUsers.childByAutoId().key
+                    
+                    let user = ["id": Auth.auth().currentUser?.uid,
+                                "age": self.SliderLabel.text! as String,
+                                "gender": self.GenderControl.selectedSegmentIndex as Int,
+                                "city": self.CityField.text! as String,
+                                "diet": self.DietField.text! as String,
+                                "allergy": self.AllergyField.text! as String,
+                                "intolerance": self.IntoleranceField.text! as String,
+                                "calories": 1400 as Int,
+                                "week_diet": "" as String,
+                                "meals": 7 as Int,
+                                "wishes": [] as Array,
+                                "declined_meals": [] as Array,
+                                "accepted_meals": [] as Array
+                        ] as [String : Any]
+                    
+                    self.refUsers.child(key).setValue(user)
+                    
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     
@@ -73,7 +103,8 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         
         DietField.inputView = DietPicker
         DietPicker.delegate = self
-
+        
+        refUsers = Database.database().reference().child("users")
     }
     
     // MARK: UIPickerView Delegation

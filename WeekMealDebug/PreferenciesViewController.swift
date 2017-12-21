@@ -12,8 +12,6 @@ import FirebaseAuth
 
 class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    var refPreferencies: DatabaseReference!
-    
     // Outlets
     @IBOutlet weak var CaloriesField: UITextField!
     
@@ -40,21 +38,11 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
         MealsField.inputView = MealsPicker
         MealsPicker.delegate = self
         
-        refPreferencies = Database.database().reference().child("preferencies")
     }
     
     //  Function addPreference
     func addPreference(){
-        let key = refPreferencies.childByAutoId().key
-        
-        let preference = ["id":key,
-                          "calories": CaloriesField.text! as String,
-                          "diet": DietField.text! as String,
-                          "meals": MealsField.text! as String,
-                          "id_user": Auth.auth().currentUser?.uid
-            ] as [String : Any]
-        
-        refPreferencies.child(key).setValue(preference)
+       
     }
 
     // MARK: UIPickerView Delegation
