@@ -13,6 +13,8 @@ target 'WeekMealDebug' do
   pod 'FacebookShare'
 
   # Pods for WeekMealDebug
+  pod 'IQKeyboardManagerSwift'
+  pod 'SwiftyJSON', '4.0.0'
 
   target 'WeekMealDebugTests' do
     inherit! :search_paths
