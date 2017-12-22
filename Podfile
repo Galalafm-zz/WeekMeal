@@ -8,6 +8,11 @@ target 'WeekMealDebug' do
   pod 'FirebaseUI'
   pod 'Firebase/Auth'
   pod 'TwitterCore', '<=2.8.0'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+
+  # Pods for WeekMealDebug
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftyJSON', '4.0.0'
 
