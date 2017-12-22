@@ -39,8 +39,9 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     func updatePreference(){
 
         let user_uid = Auth.auth().currentUser?.uid
-
-        self.refUsers.child(user_uid!).updateChildValues(["meals": MealsField])
+        let Meals = Int(self.MealsField.text!)
+        
+        self.refUsers.child(user_uid!).updateChildValues(["meals": Meals])
 
         // Analytics
         Analytics.setUserProperty(self.MealsField.text!, forName:"meals")

@@ -58,6 +58,7 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let changeRecipeAction = UITableViewRowAction(style: .default, title: "Changer", handler: { (action, indexPath) in
              self.recipeTableView.reloadRows(at: [indexPath], with: .fade)
         })
+        changeRecipeAction.backgroundColor = UIColor(red:55/255.0, green:197/255.0, blue:93/255.0, alpha: 1.0)
  
         return [changeRecipeAction]
     }

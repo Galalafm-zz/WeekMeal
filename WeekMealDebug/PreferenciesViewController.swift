@@ -42,20 +42,12 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
     func updatePreference(){
 
         let user_uid = Auth.auth().currentUser?.uid
-        
-        // Convert Calories String to Int MARCHE PAS
-        let CaloriesText: String!  = CaloriesField.text!
-        let CaloriesInt = Int(CaloriesText)
-        let preferences = ["calories": CaloriesInt ,
-                           "week_diet": DietField.text! as String,
-            ] as [String : Any]
-        print(self.refUsers.child(user_uid!))
-        self.refUsers.child(user_uid!).updateChildValues(["calories": CaloriesText])
 
-        self.refUsers.child(user_uid!).updateChildValues(["calories": CaloriesText])
+        self.refUsers.child(user_uid!).updateChildValues(["calories": CaloriesField.text!])
         self.refUsers.child(user_uid!).updateChildValues(["week_diet": DietField.text!])
         
         // Analytics
+        
         Analytics.logEvent("preferences", parameters: [
             "week_diet": self.DietField.text!,
             "calories": self.CaloriesField.text!

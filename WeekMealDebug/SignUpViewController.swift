@@ -66,7 +66,6 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             Auth.auth().createUser(withEmail: EmailField.text!, password: PasswordField.text!) { (user, error) in
                 
                 if error == nil {
-                    print("Inscription reussie ! Nous vous redirigons vers la page d'accueil.")
                     //Go on the page Home after the subscribe is succeed
                     
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Accueil")
