@@ -8,6 +8,9 @@
 
 import UIKit
 import SwiftyJSON
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class RecipeTableViewCell: UITableViewCell {
 
@@ -19,15 +22,19 @@ class RecipeTableViewCell: UITableViewCell {
 class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var recipeTableView: UITableView!
     
-  
+    var refUsers: DatabaseReference!
     
     var fetchedRecipe =  [Recipe]()
+    var UserData =  [User]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refUsers = Database.database().reference().child("users")
         recipeTableView.delegate = self
         recipeTableView.dataSource = self
-        parseData()
+        parseUser()
+        
+      
      
     }
     
@@ -36,7 +43,14 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fetchedRecipe.count
+        if(UserData.count > 0)
+        {
+            return UserData[0].meals
+        }
+        else {
+            return 0
+        }
+        
     }
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
@@ -79,11 +93,61 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.ingredientLabel?.text = ingredientFull as! String
         return cell
     }
-    
+    func parseUser() {
+        UserData = []
+        let user_uid = Auth.auth().currentUser?.uid
+        self.refUsers.child(user_uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let allergy = value?["allergy"] as? String ?? ""
+            let intolerances = value?["intolerance"] as? String ?? ""
+            let diet = value?["diet"] as? String ?? ""
+            let meals = value?["meals"] as? Int
+            self.UserData.append( User( meals: meals!, intolerances: intolerances, diet: diet, allergy: allergy) )
+            self.parseData()
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+
+    }
     func parseData() {
-        fetchedRecipe = []
+    
         
-        let url = "https://api.yummly.com/v1/api/recipes?_app_id=fa379d0b&_app_key=144f03fc46c9011322f8ee5c74f0b866&q=onion"
+        fetchedRecipe = []
+        var diet = ""
+        var intolerance = ""
+        var allergy = ""
+        if (UserData.count > 0) {
+            
+        if(UserData[0].diet == "Vegan") {
+             diet = "&allowedDiet[]=390^Vegan"
+        }
+        else if (UserData[0].diet == "Vegetarian") {
+            diet = "&allowedDiet[]=391^Vegetarian"
+        }
+       
+        if(UserData[0].allergy == "Dairy") {
+           allergy = "allowedAllergy[]=396^Dairy-Free"
+        }
+        else if(UserData[0].allergy == "Gluten") {
+            allergy = "allowedAllergy[]=393^Gluten-Free"
+        }
+        else if(UserData[0].allergy == "Egg") {
+            allergy = "allowedAllergy[]=393^Egg-Free"
+        }
+        if(UserData[0].intolerances != "") {
+            intolerance = "&excludedIngredient[]="+UserData[0].intolerances
+        }
+        }
+        else {
+        }
+        
+        let parameters = "_app_id=fa379d0b&_app_key=144f03fc46c9011322f8ee5c74f0b866&allowedDiet[]=390^Vegan&excludedIngredient[]=Beef".stringFromHttpParameters()
+        let url = "https://api.yummly.com/v1/api/recipes"
+        print("HEY")
+        print(URL(string: url)!)
+         do {
         var request = URLRequest( url: URL(string: url)! )
         request.httpMethod = "GET"
         
@@ -123,8 +187,27 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
         }
         task.resume()
+        }
+         catch{
+            print("AIE")
+        }
     }
     
+    class User {
+        var meals: Int
+        var intolerances : String
+        var diet : String
+        var allergy : String
+        
+        init (meals : Int, intolerances : String, diet: String, allergy : String ) {
+            self.intolerances = intolerances
+            self.diet = diet
+            self.allergy = allergy
+            self.meals = meals
+        }
+    }
+    
+
     class Recipe {
         var image : String
         var name : String

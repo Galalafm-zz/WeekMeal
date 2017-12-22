@@ -55,12 +55,11 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
 
         let CaloriesText: String!  = CaloriesField.text!
         let CaloriesInt = Int(CaloriesText)
-        let preferences = ["calories": CaloriesInt as! Int,
+        let preferences = ["calories": CaloriesInt ,
                            "week_diet": DietField.text! as String,
             ] as [String : Any]
-        print("Calories",CaloriesInt)
-        print("Calories",CaloriesText)
-        print(self.refUsers.child("users").child(user_uid!))
+        print("bito")
+        print(self.refUsers.child(user_uid!))
         self.refUsers.child(user_uid!).updateChildValues(["calories": CaloriesText])
 
     }
