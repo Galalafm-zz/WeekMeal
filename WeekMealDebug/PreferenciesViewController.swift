@@ -45,7 +45,12 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
         
         // Convert Calories String to Int MARCHE PAS
         let CaloriesText: String!  = CaloriesField.text!
-        _ = Int(CaloriesText)
+        let CaloriesInt = Int(CaloriesText)
+        let preferences = ["calories": CaloriesInt ,
+                           "week_diet": DietField.text! as String,
+            ] as [String : Any]
+        print(self.refUsers.child(user_uid!))
+        self.refUsers.child(user_uid!).updateChildValues(["calories": CaloriesText])
 
         self.refUsers.child(user_uid!).updateChildValues(["calories": CaloriesText])
         self.refUsers.child(user_uid!).updateChildValues(["week_diet": DietField.text!])
