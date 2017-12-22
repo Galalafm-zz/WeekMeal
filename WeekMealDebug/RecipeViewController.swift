@@ -120,22 +120,14 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         var allergy = ""
         if (UserData.count > 0) {
             
-        if(UserData[0].diet == "Vegan") {
-             diet = "&allowedDiet[]=390^Vegan"
-        }
-        else if (UserData[0].diet == "Vegetarian") {
-            diet = "&allowedDiet[]=391^Vegetarian"
+        if(UserData[0].diet != "") {
+             diet = "&allowedDiet[]="+UserData[0].diet
         }
        
-        if(UserData[0].allergy == "Dairy") {
-           allergy = "allowedAllergy[]=396^Dairy-Free"
+        if(UserData[0].allergy != "") {
+           allergy = "&allowedAllergy[]="+UserData[0].allergy
         }
-        else if(UserData[0].allergy == "Gluten") {
-            allergy = "allowedAllergy[]=393^Gluten-Free"
-        }
-        else if(UserData[0].allergy == "Egg") {
-            allergy = "allowedAllergy[]=393^Egg-Free"
-        }
+
         if(UserData[0].intolerances != "") {
             intolerance = "&excludedIngredient[]="+UserData[0].intolerances
         }
@@ -143,8 +135,7 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         else {
         }
         
-        let parameters = "_app_id=fa379d0b&_app_key=144f03fc46c9011322f8ee5c74f0b866&allowedDiet[]=390^Vegan&excludedIngredient[]=Beef".stringFromHttpParameters()
-        let url = "https://api.yummly.com/v1/api/recipes"
+        let url = "https://api.yummly.com/v1/api/recipes?_app_id=fa379d0b&_app_key=144f03fc46c9011322f8ee5c74f0b866"+diet+allergy+intolerance
         print("HEY")
         print(URL(string: url)!)
          do {
