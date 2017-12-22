@@ -69,7 +69,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                     print("Inscription reussie ! Nous vous redirigons vers la page d'accueil.")
                     //Go on the page Home after the subscribe is succeed
                     
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Preferencies")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Accueil")
                     self.present(vc!, animated: true, completion: nil)
                     
                     let key = Auth.auth().currentUser?.uid

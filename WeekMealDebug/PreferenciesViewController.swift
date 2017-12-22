@@ -23,12 +23,6 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
     let DietPicker = UIPickerView()
     let DietPickerData = [String](arrayLiteral: "Vegan", "Vegetarian", "Gluten-free", "None")
 
-    @IBOutlet weak var MealsField: UITextField!
-    let MealsPicker = UIPickerView()
-    let MealsPickerData = [String](arrayLiteral: "7", "14")
-
-    @IBOutlet weak var CheeseImageView: UIImageView!
-
     @IBAction func LaunchSearchAction(_ sender: Any) {
         updatePreference()
     }
@@ -39,8 +33,7 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
 
         DietField.inputView = DietPicker
         DietPicker.delegate = self
-        MealsField.inputView = MealsPicker
-        MealsPicker.delegate = self
+
         refUsers = Database.database().reference().child("users")
 
     }
@@ -54,16 +47,14 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
         let CaloriesText: String!  = CaloriesField.text!
         _ = Int(CaloriesText)
 
-        print(self.refUsers.child("users").child(user_uid!))
         self.refUsers.child(user_uid!).updateChildValues(["calories": CaloriesText])
         self.refUsers.child(user_uid!).updateChildValues(["week_diet": DietField.text!])
         
         // Analytics
-        
-        //convert calories string to int
-        Analytics.setUserProperty(self.CaloriesField.text!, forName:"calories")
-        Analytics.setUserProperty(self.MealsField.text!, forName:"meals")
-        Analytics.setUserProperty(self.DietField.text!, forName:"week_diet")
+        Analytics.logEvent("preferences", parameters: [
+            "week_diet": self.DietField.text!,
+            "calories": self.CaloriesField.text!
+            ])
     }
 
     // MARK: UIPickerView Delegation
@@ -73,29 +64,14 @@ class PreferenciesViewController: UIViewController, UIPickerViewDelegate, UIPick
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        var countrows : Int = DietPickerData.count
-        if pickerView == MealsPicker {
-            countrows = self.MealsPickerData.count
-        }
-        return countrows
+        return self.DietPickerData.count
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView == DietPicker {
-            let titleRow = DietPickerData[row]
-            return titleRow
-        } else if pickerView == MealsPicker {
-            let titleRow = MealsPickerData[row]
-            return titleRow
-        }
-        return ""
+        return DietPickerData[row]
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView == DietPicker {
-            self.DietField.text = self.DietPickerData[row]
-        } else if pickerView == MealsPicker {
-            self.MealsField.text = self.MealsPickerData[row]
-        }
+        self.DietField.text = self.DietPickerData[row]
     }
 }
